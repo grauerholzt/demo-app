@@ -1,6 +1,6 @@
 # demo-app
 
-###Podman DEMO Project
+## Podman DEMO Project
 1. Create a MariaDB Demo Database
 2. Create PHP Container
 3. Create NGINX Container to use PHP Skript

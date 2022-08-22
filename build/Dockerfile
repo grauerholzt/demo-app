@@ -5,5 +5,3 @@ RUN apt-get update && apt-get install -y \
 		libpng-dev \
 	&& docker-php-ext-configure gd --with-freetype --with-jpeg \
 	&& docker-php-ext-install gd mysqli
-# mysqli \
-#        && docker-php-ext-enable mysqli
