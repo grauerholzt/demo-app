@@ -1,0 +1,6 @@
+podman build ./build/ -t demo-php:7.4-fpm
+
+podman run \
+ -d --restart=always --pod demo-pod \
+ -v ./html/demo:/usr/share/nginx/html/demo \
+ --name=demo-php localhost/demo-php:7.4-fpm

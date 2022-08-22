@@ -1,0 +1,2 @@
+podman pod stop demo-pod
+podman pod rm demo-pod

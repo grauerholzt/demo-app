@@ -1,0 +1,5 @@
+podman run \
+ -d --restart=always --pod demo-pod \
+ -v ./html/demo:/usr/share/nginx/html/demo \
+ -v ./config/nginx:/etc/nginx/conf.d \
+ --name=demo-nginx nginx:latest

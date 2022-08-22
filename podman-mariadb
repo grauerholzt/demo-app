@@ -1,0 +1,10 @@
+podman run \
+ -d --restart=always --pod new:demo-pod \
+ -e MYSQL_ROOT_PASSWORD="password" \
+ -e MYSQL_DATABASE="demo" \
+ -e MYSQL_USER="demo" \
+ -e MYSQL_PASSWORD="passw0rd" \
+ -v /var/lib/mysql:/var/lib/mysql \
+ -v ./sql:/docker-entrypoint-initdb.d \
+ -p 8080:80 \
+ --name=demo-db mariadb:latest
